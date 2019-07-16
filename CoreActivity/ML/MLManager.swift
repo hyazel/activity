@@ -39,13 +39,13 @@ public final class MLManager {
     public func handleMotionDataAndPredict(motionData: MotionData, classification: (String) -> Void) {
         guard let dataArray = predictionWindowDataArray else { return }
 
-        dataArray[[0, currentIndexInPredictionWindow, 0] as [NSNumber]] = motionData.accelerationX as NSNumber
-        dataArray[[0, currentIndexInPredictionWindow, 1] as [NSNumber]] = motionData.accelerationY as NSNumber
-        dataArray[[0, currentIndexInPredictionWindow, 2] as [NSNumber]] = motionData.accelerationZ as NSNumber
+        dataArray[[0, currentIndexInPredictionWindow, 0] as [NSNumber]] = motionData.rotationX as NSNumber
+        dataArray[[0, currentIndexInPredictionWindow, 1] as [NSNumber]] = motionData.rotationY as NSNumber
+        dataArray[[0, currentIndexInPredictionWindow, 2] as [NSNumber]] = motionData.rotationZ as NSNumber
 
-        dataArray[[0, currentIndexInPredictionWindow, 3] as [NSNumber]] = motionData.rotationX as NSNumber
-        dataArray[[0, currentIndexInPredictionWindow, 4] as [NSNumber]] = motionData.rotationY as NSNumber
-        dataArray[[0, currentIndexInPredictionWindow, 5] as [NSNumber]] = motionData.rotationZ as NSNumber
+        dataArray[[0, currentIndexInPredictionWindow, 3] as [NSNumber]] = motionData.accelerationX as NSNumber
+        dataArray[[0, currentIndexInPredictionWindow, 4] as [NSNumber]] = motionData.accelerationY as NSNumber
+        dataArray[[0, currentIndexInPredictionWindow, 5] as [NSNumber]] = motionData.accelerationZ as NSNumber
 
         currentIndexInPredictionWindow += 1
 
