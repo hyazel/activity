@@ -1,4 +1,4 @@
-# 🚴‍ 🛹 🤸‍ 🚗 🚶‍ 🏃‍ ACTIVITY - SWIFT
+# 🚴‍ 🤸‍ SWIFT ACTIVITY  🚶‍ 🏃‍
 
 <img src="https://images.unsplash.com/photo-1498484502070-2165cb42d504?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
 
